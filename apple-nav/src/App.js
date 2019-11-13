@@ -4,18 +4,21 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import './App.css';
 import Nav from "./NavComponent/Nav";
 import Mac from "./NavComponent/Mac";
+import IPhone from "./NavComponent/IPhone";
 function App() {
   return (
     <div className="App">
       <nav>
-      <Link exact to="/" >NavHome</Link>
+      <Link exact to="/" >NavHome   </Link>
 
-      <Link to ="/mac" >Mac</Link>
-      <Link to="/iphone" >iPhone</Link>
+      <Link to ="/mac" >Mac    </Link>
+      <Link to="/iphone" >iPhone   </Link>
       </nav>
       <Route exact path="/" component={Nav} />
       <Route path="/mac"
       render={props => <Mac {...props} macProducts={{}}/>}/>
+      <Route path="/iphone"
+      render={props => <IPhone {...props} iphoneProducts={{}}/>}/>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

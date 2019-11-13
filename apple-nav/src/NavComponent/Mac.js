@@ -8,8 +8,12 @@ function Mac() {
         <div className="App">
 
             <nav>
+                <Link to="/mac/macbook">MacBook    </Link>
+                <Link to="/mac/macbookpro">MacBook Pro</Link>
 
             </nav>
+
+
         </div>
 
     );
